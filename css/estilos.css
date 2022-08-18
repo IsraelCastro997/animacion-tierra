@@ -1,0 +1,128 @@
+
+body{
+background-image: url("../img/estrelles.gif");
+}
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+
+.tierra{
+width: 400px;
+height:400px;
+margin-left: 480px;
+margin-top: 125px;
+overflow:hidden;
+position: absolute;
+}
+
+.sol{
+width: 250px;
+height: 250px;
+margin-top: 0px;
+margin-left: 15px;
+position: absolute;
+
+}
+
+.central-tierra {
+background-image: url("../img/mapa2.jpg");
+background-size: cover;
+width: 80%;
+height:80%;
+position: relative;
+border-radius: 50%;
+margin-left:40px;
+margin-top: 35px; 
+box-shadow: -30px -15px 25px  rgba(0, 0, 0, 0.750) inset,
+            -60px -15px 20px rgba(0, 0, 0, 0.740) inset,
+            -40px -40px 15px rgb(255, 255, 255, .2) inset;
+animation-name: rotacion;
+animation-duration:15s;
+animation-iteration-count:infinite;
+animation-timing-function: linear;
+}
+
+.central-sol{
+ background-image: url("../img/sol.jpg");
+ background-size:cover;
+ width: 40%;
+ height:40%;
+ position: relative;
+ border-radius: 50%;
+ margin-left:60px;
+ margin-top:60px; 
+ box-shadow: -15px -10px 25px  rgba(0, 0, 0, 0.750) inset,
+            -0px -10px 20px rgba(0, 0, 0, 0.740) inset,
+            -10px -20px 15px rgb(255, 255, 255, .2) inset,
+            15px  20px 35px 10px rgb(253, 231, 130),
+            -15px -20px 30px 10px rgb(241, 210, 122);
+animation-name: rotacionSol;
+animation-duration:300s;
+animation-iteration-count:infinite;
+animation-timing-function: linear;
+
+}
+
+
+.central:hover{
+cursor: pointer;
+animation-play-state: paused;
+}
+
+@keyframes rotacionSol{
+ 0%{background-position:90px;
+     box-shadow: 
+     -15px -10px 25px  rgba(0, 0, 0, 0.750) inset,
+     -0px -10px 20px rgba(0, 0, 0, 0.740) inset,
+     -10px -20px 15px rgb(255, 255, 255, .2) inset,
+      15px  20px 35px 3px rgb(253, 231, 130),
+     -15px -20px 30px 3px rgb(241, 210, 122);;
+    }
+ 25%{background-position-x: 306px;
+    box-shadow: 
+    -15px -10px 25px  rgba(0, 0, 0, 0.750) inset,
+    -0px -10px 20px rgba(0, 0, 0, 0.740) inset,
+    -10px -20px 15px rgb(255, 255, 255, .2) inset,
+     15px  20px 35px 3px rgb(253, 231, 130),
+    -15px -20px 30px 3px rgb(241, 210, 122);;
+    }
+ 50%{background-position-x: 612px;
+    box-shadow: 
+    -15px -10px 25px  rgba(0, 0, 0, 0.750) inset,
+    -0px -10px 20px rgba(0, 0, 0, 0.740) inset,
+    -10px -20px 15px rgb(255, 255, 255, .2) inset,
+     15px  20px 35px 3px rgb(253, 231, 130),
+    -15px -20px 30px 3px rgb(241, 210, 122);;
+    }
+ 75%{background-position-x: 918px;
+    box-shadow: 
+    -15px -10px 25px  rgba(0, 0, 0, 0.750) inset,
+    -0px -10px 20px rgba(0, 0, 0, 0.740) inset,
+    -10px -20px 15px rgb(255, 255, 255, .2) inset,
+     15px  20px 35px 3px rgb(253, 231, 130),
+    -15px -20px 30px 3px rgb(241, 210, 122);;
+    }
+ 100%{background-position-x: 1224px;
+     box-shadow: 
+     -15px -10px 25px  rgba(0, 0, 0, 0.750) inset,
+     -0px -10px 20px rgba(0, 0, 0, 0.740) inset,
+     -10px -20px 15px rgb(255, 255, 255, .2) inset,
+      15px  20px 35px 3px rgb(253, 231, 130),
+     -15px -20px 30px 3px rgb(241, 210, 122);;
+     }
+    
+    
+}
+
+@keyframes rotacion{
+0%{background-position:90px;}
+25%{background-position-x: 306px;}
+50%{background-position-x: 612px;}
+75%{background-position-x: 918px;}
+100%{background-position-x: 1224px;}
+
+}
+
